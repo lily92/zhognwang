@@ -1,0 +1,12 @@
+.h5-icon{background:url(../images/h5-icon.png)  no-repeat;}
+.phone{height:45px;width:45px;background-position:-80px -155px;}
+.service-1{height:45px;width:45px;background-position:-1px 0;}
+.service{height:45px;width:45px;background-position:0 -48px;}
+.phone-1{height:45px;width:45px;background-position:-80px -109px;}
+.dingzhifuwu-1{height:45px;width:45px;background-position:0 -94px;}
+.dingzhifuwu{height:45px;width:45px;background-position:-2px -142px;}
+.h54{height:60px;width:60px;background-position:0 -270px;}
+.h51{height:60px;width:60px;background-position:0 -330px;}
+.h53{height:60px;width:60px;background-position:0 -390px;}
+.h52{height:60px;width:60px;background-position:0 -450px;}
+.h55{height:60px;width:60px;background-position:0 -510px;}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="css/phone.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+  <script type="text/javascript">
+    $webfont.load("body", "7a30868a20864b69844206e4df43cda0", "SourceHanSerif-EL");
+    /*$webfont.load("#id1,.class1,h1", "7a30868a20864b69844206e4df43cda0", "SourceHanSerif-EL");*/
+    /*．．．*/
+    $webfont.draw();
+  </script>
+  <title>中网嬴通-首页</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  </header>
+  <!--end  header -->
+
+
+  <!--star banner -->
+  <div class="swiper-container banner positionr wow fadeIn index-banner  ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide positionr">
+        <!-- PC端banner  -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="visible-xs w100">
+      </div>
+      <div class="swiper-slide positionr">
+        <!-- PC端banner  -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="visible-xs w100">
+        <div class="positionb">
+          <video class="w100 banner-video" src="video/video.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+        </div>
+      </div>
+      <div class="swiper-slide positionr">
+        <!-- PC端banner  -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="visible-xs w100">
+      </div>
+
+
+    </div>
+
+    <div class="swiper-pagination-banner swiper-pagination "></div>
+    <script>
+      $(function () {
+        var video_index = 0
+        var swiper_banner = new Swiper('.banner', {
+          autoplay: false,
+          speed: 600,
+          parallax: true,
+          preventClicks: false,
+          loop: true,
+          // effect: 'fade',
+          pagination: {
+            el: '.swiper-pagination-banner',
+            // type: 'fraction',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            slideChangeTransitionEnd: function () {
+              console.log(this.activeIndex); //切换结束时，告诉我现在是第几个slide
+              if(this.activeIndex==1){
+                video_index = 1
+                // stopBanner()
+                // console.log('暂停')
+                // playBanner()
+                
+              }
+              else{
+                // playBanner()
+              }
+            },
+          },
+        });
+        // swiper_banner.autoplay.stop();
+        // swiper_banner.autoplay.start();
+       
+
+       
+        function playBanner(){
+          console.log('播放')
+          swiper_banner.autoplay.start();
+        }
+        function stopBanner(){
+          console.log('暂停')
+          swiper_banner.autoplay.stop()
+        }
+      })
+    </script>
+
+  </div>
+  <!-- end banner -->
+
+  <!-- what can i do for you  -->
+  <div class="max1200 padding-tb150">
+    <div class="do-bg">
+      <div class="h3 text-center colorf">
+        <p class="fon36">What can we do for you</p>
+        <p class="fon24">我们可以帮你做一些什么</p>
+      </div>
+      <div class="padding-tb20">
+        <div class="swiper-container " id="do_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+            <div class="swiper-slide positionr">
+              <img src="images/index/do-img-bg.png" alt="" srcset="" class="w100">
+              <div class="positionb">
+                <img src="images/index/do-img.png" alt="" srcset="" class="w100">
+              </div>
+              <div class="positionb master fon24  colorf">
+                APP软件开发
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper('#do_swiper', {
+      slidesPerView: 4,
+      spaceBetween: 5,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    $('#do_swiper .swiper-slide ').hover(function () {
+        // over
+        $(this).addClass('hover')
+        
+      }, function () {
+        // out
+        $(this).removeClass('hover')
+      }
+    );
+  </script>
+  <!-- end  what can i do for you -->
+
+  <!-- 我们的成果 -->
+  <div class="max1200">
+    <h3 class="text-center fon24">我们的成果</h3>
+    <div class="type padding-tb40">
+      <ul class="flex type-ul">
+        <li>
+          <a href="" class="cur">最新案例</a>
+        </li>
+        <li>
+          <a href="">高端网站建设</a>
+        </li>
+        <li>
+          <a href="">小程序开发</a>
+        </li>
+        <li>
+          <a href="">APP定制开发</a>
+        </li>
+        <li>
+          <a href="">更多案例</a>
+        </li>
+      </ul>
+    </div>
+    <!-- list -->
+    <ul class="list row">
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+      <li class="col-sm-4">
+        <a class="list-img positionr" href="">
+          <!-- 占位符，勿读后台 -->
+          <img src="images/index/case-img-bg.jpg" alt="" srcset="">
+          <div class="positionb">
+            <img src="images/index/case-img.jpg" alt="" srcset="">
+          </div>
+        </a>
+        <a class="list-txt" href="">
+          <p class="fon16 color0">斗记洱茶</p>
+          <p class="fon14 color6">小程序开发、微信公众号开发</p>
+        </a>
+      </li>
+
+    </ul>
+    <!-- end list -->
+  </div>
+  <!-- end 我们的成果 -->
+
+
+    <!-- 我们的服务客户 -->
+    <div class="bgf7 padding-tb80">
+      <div class="max1200">
+        <h3 class="text-center">
+          <div class="fon24">
+            我们的服务客户
+          </div>
+          <div class="fon16">
+            为500多家大型品牌提供全方位的网络支持
+          </div>
+        </h3>
+        <!-- list -->
+        <div class="c-list">
+          <ul class="flex">
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/a-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/b-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/b.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/c-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/c.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/d-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/d.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/a-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/b-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/b.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/c-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/c.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/d-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/d.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/a-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/b-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/b.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/c-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/c.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/d-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/d.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/c-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/c.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/d-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/d.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c-box positionr">
+                <div class="c-img positionr">
+                  <!-- 占位符。勿读后台 -->
+                  <img src="images/icon/index/a.jpg" alt="" srcset="" class="w100 visible-hidden">
+                  <div class="positionb logo-img">
+                    <div class="positionr">
+                      <img src="images/icon/index/c-1.jpg" alt="" srcset="" class="w100 color ">
+                      <img src="images/icon/index/c.jpg" alt="" srcset="" class="w100 gray ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <!-- end list -->
+      </div>
+    </div>
+
+    <!-- end 我们的服务客户 -->
+
+
+  <!-- 我们的动态 -->
+  <div class="padding-tb80 ">
+    <div class="max1200">
+      <h3 class="text-center color3 padding-tb40">
+        <p class="fon24">
+          我们的动态
+        </p>
+        <p class="fon16">
+          让价值共享 记录企业发展脚步
+        </p>
+      </h3>
+      <ul class="list row list-news">
+        <li class="col-sm-4">
+          <div class="list-img positionr">
+            <!-- 占位符，勿读后台 -->
+            <img src="images/index/index-new-bg.jpg" alt="" srcset="">
+            <div class="positionb">
+              <img src="images/index/index-new-img.jpg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="list-txt">
+            <p class="fon16 color0">网购网站名称运用的音质手段及拟声词</p>
+            <p class="fon14 color6 line2">音质手段主要包括双声、叠韵和叠音等形式。网购网站
+              名称中也经常运用音质手段, 使顾客对名称有更多的兴...</p>
+            <p class="flex flex-just new-more">
+              <span>
+                2020.03.21
+              </span>
+              <a href=""><img src="images/index/index-more.png" alt="" srcset=""></a>
+            </p>
+          </div>
+        </li>
+        <li class="col-sm-4">
+          <div class="list-img positionr">
+            <!-- 占位符，勿读后台 -->
+            <img src="images/index/index-new-bg.jpg" alt="" srcset="">
+            <div class="positionb">
+              <img src="images/index/index-new-img.jpg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="list-txt">
+            <p class="fon16 color0">网购网站名称运用的音质手段及拟声词</p>
+            <p class="fon14 color6 line2">音质手段主要包括双声、叠韵和叠音等形式。网购网站
+              名称中也经常运用音质手段, 使顾客对名称有更多的兴...</p>
+            <p class="flex flex-just new-more">
+              <span>
+                2020.03.21
+              </span>
+              <a href=""><img src="images/index/index-more.png" alt="" srcset=""></a>
+            </p>
+          </div>
+        </li>
+        <li class="col-sm-4">
+          <div class="list-img positionr">
+            <!-- 占位符，勿读后台 -->
+            <img src="images/index/index-new-bg.jpg" alt="" srcset="">
+            <div class="positionb">
+              <img src="images/index/index-new-img.jpg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="list-txt">
+            <p class="fon16 color0">网购网站名称运用的音质手段及拟声词</p>
+            <p class="fon14 color6 line2">音质手段主要包括双声、叠韵和叠音等形式。网购网站
+              名称中也经常运用音质手段, 使顾客对名称有更多的兴...</p>
+            <p class="flex flex-just new-more">
+              <span>
+                2020.03.21
+              </span>
+              <a href=""><img src="images/index/index-more.png" alt="" srcset=""></a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!--end  我们的动态 -->
+
+
+
+
+
+
+  <!--star  footer -->
+  <footer>
+  </footer>
+  <!-- end footer -->
+
+
+</body>
+
+</html>

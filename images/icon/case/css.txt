@@ -1,0 +1,13 @@
+.case-icon{background:url(../images/case-icon.png)  no-repeat;}
+.news_atr{height:7px;width:4px;background-position:0 0;}
+.news_atr1{height:7px;width:4px;background-position:0 -7px;}
+.type1{height:16px;width:16px;background-position:0 -14px;}
+.type2{height:16px;width:16px;background-position:0 -30px;}
+.prev1{height:17px;width:17px;background-position:0 -46px;}
+.prev2{height:17px;width:17px;background-position:0 -63px;}
+.next1{height:17px;width:17px;background-position:0 -80px;}
+.next2{height:17px;width:17px;background-position:0 -97px;}
+.btn-left2{height:41px;width:41px;background-position:0 -114px;}
+.btn-left1{height:41px;width:41px;background-position:0 -155px;}
+.btn-right1{height:41px;width:41px;background-position:0 -196px;}
+.btn-right2{height:41px;width:41px;background-position:0 -237px;}

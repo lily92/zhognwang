@@ -1,0 +1,9 @@
+.fix-icon{background:url(../images/fix-icon.png)  no-repeat;}
+.right6{height:40px;width:40px;background-position:0 0;}
+.right5{height:40px;width:40px;background-position:0 -40px;}
+.right8{height:40px;width:40px;background-position:0 -80px;}
+.right7{height:40px;width:40px;background-position:0 -120px;}
+.right2{height:40px;width:40px;background-position:0 -160px;}
+.right1{height:40px;width:40px;background-position:0 -200px;}
+.right4{height:40px;width:40px;background-position:0 -240px;}
+.right3{height:40px;width:40px;background-position:0 -280px;}

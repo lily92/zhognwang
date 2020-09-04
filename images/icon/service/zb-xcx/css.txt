@@ -1,0 +1,11 @@
+.zb-xcx{background:url(../images/zb-xcx.png)  no-repeat;}
+.mokuaizhuanhua{height:45px;width:45px;background-position:0 0;}
+.ip-1{height:45px;width:45px;background-position:0 -368px;}
+.mokuaizhuanhua-1{height:45px;width:45px;background-position:0 -46px;}
+.yingxiao-1{height:45px;width:45px;background-position:0 -135px;}
+.yingxiao{height:45px;width:45px;background-position:0 -93px;}
+.fenxiao-1{height:45px;width:45px;background-position:0 -181px;}
+.fenxiao{height:45px;width:45px;background-position:0 -228px;}
+.hd{height:45px;width:45px;background-position:0 -320px;}
+.ip{height:45px;width:45px;background-position:0 -415px;}
+.hd-1{height:45px;width:45px;background-position:0 -273px;}

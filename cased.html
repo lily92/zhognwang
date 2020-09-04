@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="css/phone.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+  <script type="text/javascript">
+    $webfont.load("body", "7a30868a20864b69844206e4df43cda0", "SourceHanSerif-EL");
+    /*$webfont.load("#id1,.class1,h1", "7a30868a20864b69844206e4df43cda0", "SourceHanSerif-EL");*/
+    /*．．．*/
+    $webfont.draw();
+  </script>
+  <title>中网嬴通-案例详情</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+  </header>
+  <!--end  header -->
+
+
+  <!--star banner -->
+  <div class="swiper-container banner positionr wow fadeIn index-banner  ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide positionr">
+        <!-- PC端banner  -->
+        <img src="images/cased/case-detail-banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/index/banner.jpg" alt="" srcset="" class="visible-xs w100">
+
+        <div class="positionb">
+          <div class="max1200 flex  banner-txt h100">
+            <div class="colorf">
+              <h3 class="fon36 wow fadeInUp"><b>案例详情</b></h3>
+              <p class="fon18 wow fadeInUp" data-wow-delay='.3s'>
+                不断探索用户体验的无限可能性
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end banner -->
+
+
+  <!-- 我们的案例 -->
+  <div class="padding-tb80  bgf7">
+    <div class="max1200  bgf">
+      <!-- 案例详情 -->
+      <div class="cased-con fon14 padding-tb40 ">
+        <div class="case-title">
+          <p class="fon24 color3 case-title-desc">项目简介</p>
+          <div class="case-detail flex flex-just flex-al-center">
+            <div class="case-desc">
+              <div class="case-describe">
+                MARUBI丸美，以优雅为表，以梦想为心，以价值为核，选取全世界文化传承中优秀的精髓，铸就了这个现代的、东方的、高品质的轻奢品牌。丸美，名字源于一个哲思——"丸是圆，圆是美"，其灵感不仅可溯源至东方数千所推崇的“以圆为美”，更与西方世界的审美观相通。丸美通过美的文化，以及美观的产品设计，将高科技的产品变得可亲近，以追求完美的创新精神，实现跨越东西方永恒不变的美。
+              </div>
+              <p>
+                <a href="" target="_blank" class="case-detail-link flex flex-al-center">
+                  <span class="website"> www.doujichaye.com</span> &nbsp;&nbsp;
+                  <span class="case-icon news_atr"></span>
+
+
+                </a></p>
+            </div>
+            <div class="case-erweima">
+              <img src="images/cased/case-erweima.jpg" alt="" srcset="">
+            </div>
+          </div>
+
+        </div>
+        <div class="cased">
+
+        </div>
+      </div>
+      <!-- end  我们的案例-->
+
+
+    </div>
+    <div class="max1200 bgf">
+      <!-- 案例轮播图 -->
+      <div class="">
+        <div class="swiper-container case-banner positionr wow fadeIn   padding-tb80">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide positionr text-center">
+              <img src="images/cased/cased-img.png" alt="" srcset="" class=" ">
+            </div>
+            <div class="swiper-slide positionr text-center">
+              <img src="images/cased/cased-img.png" alt="" srcset="" class=" ">
+            </div>
+            <div class="swiper-slide positionr text-center">
+              <img src="images/cased/cased-img.png" alt="" srcset="" class=" ">
+            </div>
+
+
+          </div>
+          <div class="swiper-button-prev case-icon btn-left1"></div>
+          <div class="swiper-button-next  case-icon btn-right1"></div>
+          <div class="swiper-pagination-banner swiper-pagination "></div>
+          <script>
+            $(function () {
+              var swiper = new Swiper('.case-banner', {
+                autoplay: true,
+                speed: 600,
+                parallax: true,
+                preventClicks: false,
+                loop: true,
+                // effect: 'fade',
+                pagination: {
+                  el: '.swiper-pagination-banner',
+                  // type: 'fraction',
+                  clickable: true
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            })
+          </script>
+        </div>
+      </div>
+
+      <!-- end 案例轮播图 -->
+      <!-- 分页 -->
+      <div class="page-list flex flex-just">
+        <div class="prev flex flex-center page-icon">
+          <a href=""> <span class="case-icon prev1"></span>
+            <span>上一篇</span>
+          </a>
+        </div>
+        <div class="type1 flex flex-center page-icon page-back">
+          <a href=""> <span class="case-icon type1 "></span>返回列表</a>
+        </div>
+        <div class="next1 flex flex-center page-icon">
+          <a href=""> <span class="case-icon next1"></span>下一篇</a>
+        </div>
+
+      </div>
+      <!-- end分页 -->
+    </div>
+  </div>
+  <!--end  我们的动态 -->
+
+
+
+
+
+
+  <!--star  footer -->
+  <footer>
+  </footer>
+  <!-- end footer -->
+
+
+</body>
+
+</html>

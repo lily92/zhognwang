@@ -1,0 +1,9 @@
+.contact-icon{background:url(../images/contact-icon.png)  no-repeat;}
+.c-map2{height:48px;width:48px;background-position:0 0;}
+.c-map{height:48px;width:48px;background-position:0 -48px;}
+.c-phone1{height:48px;width:48px;background-position:0 -96px;}
+.c-phone{height:48px;width:48px;background-position:0 -144px;}
+.c-chat1{height:48px;width:48px;background-position:0 -192px;}
+.c-chat{height:48px;width:48px;background-position:0 -240px;}
+.c-mail1{height:48px;width:48px;background-position:0 -288px;}
+.c-mail{height:48px;width:48px;background-position:0 -336px;}
