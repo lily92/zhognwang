@@ -83,34 +83,29 @@
         </div>
         <div class="about-item">
           <p class="fon14 color6"> 客户案例实施成果</p>
-          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="3000">3000+</b>+</p>
+          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="3000"></b>+</p>
           <p>one</p>
         </div>
         <div class="about-item">
           <p class="fon14 color6">专业团队人数</p>
-          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="30">30+</b>+</p>
+          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="30">3</b>+</p>
           <p>one</p>
         </div>
         <div class="about-item">
           <p class="fon14 color6">行业信息化整体解决方案</p>
-          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="35">35+</b>+</p>
+          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="35"></b>+</p>
           <p>one</p>
         </div>
         <div class="about-item">
           <p class="fon14 color6">百分之九十续费率</p>
-          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="98">98%+</b>%</p>
+          <p class="fon48 color0 padding-tb40"><b  class="count" data-from="1" data-to="98"></b>%</p>
           <p>+</p>
         </div>
       </div>
       <script>
-          document.onscroll = function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var cHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        var oDiv = document.getElementById('count');
-        if (scrollTop > (oDiv.offsetTop - cHeight))
-            // alert('触发了')
-            $('.count').countTo();
-    }
+        setTimeout(function(){
+              $('.count').countTo();
+            },2000)
         
       </script>
     </div>

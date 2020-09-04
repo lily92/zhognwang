@@ -163,9 +163,11 @@ header.active .nav a { color: #333; }
 
 .do-bg .swiper-pagination { bottom: 30px; }
 
-.do-bg #do_swiper { padding-bottom: 60px; }
+.do-bg #do_swiper { padding-bottom: 60px; padding-top: 20px; }
 
-.do-bg #do_swiper .swiper-slide { transition: .2s linear all; transform: scale3d(0.9, 0.9, 0.9); }
+.do-bg #do_swiper .swiper-slide { transition: .2s linear all; border-radius: 10px; overflow: visible; transform: scale(0.9); }
+
+.do-bg #do_swiper .swiper-slide img { border-radius: 10px; }
 
 .do-bg #do_swiper .swiper-slide.hover { transform: scale(1.2); will-change: transform; transform: perspective(1000px) rotateX(10.79deg) rotateY(-3.21deg) scale3d(1, 1, 1); }
 
@@ -187,7 +189,7 @@ header.active .nav a { color: #333; }
 
 .list li { margin-bottom: 30px; }
 
-.list .list-img { overflow: hidden; }
+.list .list-img { overflow: hidden; transition: .3s linear all; }
 
 .list .list-txt { padding: 10px 0; transition: .3s linear all; }
 
@@ -198,6 +200,8 @@ header.active .nav a { color: #333; }
 .list li:hover { cursor: pointer; }
 
 .list li:hover .list-txt { text-decoration: underline; }
+
+.list li:hover .list-img { box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .list .new-more-btn { width: 24px; height: 7px; transition: .3s linear all; background: url(../images/index/index-more.png) no-repeat center; padding: 10px; transform: translateX(3px); }
 
@@ -243,7 +247,9 @@ footer .footer-item { width: 280px; }
 
 .list-news-bgf { padding-bottom: 60px; }
 
-.list-news-bgf .list-txt { background: #fff; border: 1px solid #fff; border-top: 0; }
+.list-news-bgf .list-txt { background: #fff; border: 1px solid #fff; border-top: 0; transition: .3s linear all; display: block; }
+
+.list-news-bgf .list-txt:hover { box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); transform: translateY(-5px); }
 
 .loading-more { padding: 10px 40px; border: 1px solid #000; border-radius: 25px; color: #000; }
 
@@ -294,7 +300,7 @@ footer .footer-item { width: 280px; }
 
 .case-erweima { width: 180px; }
 
-.case-describe { padding-bottom: 40px; }
+.case-describe { padding-bottom: 40px; text-align: justify; }
 
 .case-detail-link .website { position: relative; }
 
@@ -348,15 +354,15 @@ footer .footer-item { width: 280px; }
 
 .about-item { width: 20%; }
 
-.about-item .fon48 { font-family: Bahnschrift,Arial, Helvetica, sans-serif; }
+.about-item .fon48 { font: normal 48px/1 'AkzidenzGrotesk-BoldCondAlt'; }
 
-.c-list li { width: 20%; padding: 20px; position: relative; overflow: hidden; }
+.c-list li { width: 20%; padding: 30px; position: relative; overflow: hidden; }
 
 .c-list li::after { content: ''; position: absolute; width: 6px; height: 6px; background: #e2e2e2; border-radius: 50%; position: absolute; right: -3px; bottom: -3px; }
 
-.c-list .c-box::after { content: ''; border-right: 1px solid #e2e2e2; position: absolute; height: 100%; right: -20px; top: 0; }
+.c-list .c-box::after { content: ''; border-right: 1px solid #e2e2e2; position: absolute; height: 100%; right: -30px; top: 0; }
 
-.c-list .c-box::before { content: ''; border-bottom: 1px solid #e2e2e2; position: absolute; width: 100%; height: 1px; left: 0; bottom: -20px; }
+.c-list .c-box::before { content: ''; border-bottom: 1px solid #e2e2e2; position: absolute; width: 100%; height: 1px; left: 0; bottom: -30px; }
 
 .c-list li:nth-child(5n) .c-box::after { border: 0; }
 
