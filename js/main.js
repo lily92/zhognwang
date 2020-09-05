@@ -60,23 +60,12 @@ $(function () {
     });
 
     /*移动端导航*/
-    $('.phone-nav').click(function (e) {
+    $('.menu-btn').click(function (e) { 
       e.preventDefault();
-      $('.phone-nav-list').addClass('active');
+      $(this).toggleClass('active');
+      $('.phone-menu-list').toggleClass('active');
     });
-
-    $('.colse-phone-nav').click(function (e) {
-      e.preventDefault();
-      $('.phone-nav-list').removeClass('active');
-
-    });
-
-    $('.sub-icon').click(function (e) {
-      e.preventDefault();
-      $(this).parent().find('.submenu').stop().slideToggle();
-      $(this).toggleClass('active')
-
-    });
+    
 
 
   });
@@ -96,7 +85,14 @@ $(function () {
 
   });
 
+  layui.use('flow', function () {
+    var flow = layui.flow;
+    //当你执行这样一个方法时，即对页面中的全部带有lay-src的img元素开启了懒加载（当然你也可以指定相关img）
+    flow.lazyimg();
+  });
+
   new WOW().init();
+
 
 
 
