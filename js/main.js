@@ -34,14 +34,15 @@ $(function () {
     /*pc端导航*/
     $('#case').hover(function () {
       // over
+      $(this).addClass('active')
       $('header').addClass('active')
-      $('#case_con').stop().slideDown()
+      $('#case_con').stop().fadeIn()
 
     }, function () {
       // out
     });
     $('#case_con').mouseleave(function () {
-      $('#case_con').stop().slideUp()
+      $('#case_con').stop().fadeOut()
       if($(window).scrollTop() > 30){
         $('header').addClass('active')
       }else{
@@ -51,19 +52,35 @@ $(function () {
 
     $('.nav-list li').hover(function () {
       // over
-      $(this).find('.submenu').stop().slideDown()
+      $(this).find('.submenu').stop().fadeIn()
 
 
     }, function () {
       // out
-      $(this).find('.submenu').stop().slideUp()
+      $(this).find('.submenu').stop().fadeOut()
     });
 
     /*移动端导航*/
     $('.menu-btn').click(function (e) { 
       e.preventDefault();
       $(this).toggleClass('active');
+      $('header,.main').toggleClass('cur');
       $('.phone-menu-list').toggleClass('active');
+    });
+
+    $('.service-nav').click(function (e) { 
+      e.preventDefault();
+      $('.phone-menu-sub').addClass('active')
+    });
+
+    $('.menu-back').click(function (e) { 
+      e.preventDefault();
+      $('.phone-menu-sub').removeClass('active')
+    });
+
+    $('#btn_close').click(function (e) { 
+      e.preventDefault();
+      $('.menu-btn').click()
     });
     
 
